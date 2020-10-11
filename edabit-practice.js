@@ -101,3 +101,19 @@
              return n % 2 === 0;
     }
 
+// Create a function that returns true if a string is empty and false otherwise.
+        function isEmpty(s) {
+            return s === "";
+    }
+
+//    or
+        // function isEmpty(s) {
+        // 	return (s.length > 0 ? false : true)
+//  }
+
+
+
+// Create a function that returns true when num1 is equal to num2; otherwise return false.
+        function isSameNum(num1, num2) {
+             return num1 === num2 ? true : false;
+    }
