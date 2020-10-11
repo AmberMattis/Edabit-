@@ -58,7 +58,7 @@
 
             return totalLegs;
 
-}
+    }
 
 //Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
 
@@ -67,7 +67,7 @@
         if (x < 0)	return "negative";
 
             return true;
-}
+    }
 
 //What have you learned so far that will permit you to do two different checks (value and type) with a single statement?
 //
@@ -75,4 +75,10 @@
 
         function checkEquality(a, b) {
              return a === b;
+    }
+
+//Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+
+        function dividesEvenly(a, b) {
+              return a % b  === 0;
 }
