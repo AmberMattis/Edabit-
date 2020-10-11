@@ -68,3 +68,11 @@
 
             return true;
 }
+
+//What have you learned so far that will permit you to do two different checks (value and type) with a single statement?
+//
+// Implement a function that returns true if the parameters are equal, and false if they are not.
+
+        function checkEquality(a, b) {
+             return a === b;
+}
