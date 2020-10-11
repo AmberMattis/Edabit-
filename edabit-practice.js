@@ -15,3 +15,11 @@
 
         return totalSecs;
     }
+
+// For every km there is five corn. Create a function that takes an integer, num, and returns the amount of corn.
+
+    function corn(num){
+        var totalCorn = num * 5;
+
+        return totalCorn;
+    }
