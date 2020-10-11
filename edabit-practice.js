@@ -1,12 +1,12 @@
 "use strict"
 
-//return the remainder of two numbers
+// return the remainder of two numbers
 
     function remainder(x, y) {
          return x % y;
     }
 
-//return a function that takes two integers (hours,minutes), converts them into seconds, and adds them.
+// return a function that takes two integers (hours,minutes), converts them into seconds, and adds them.
 
     function convert(hours, minutes) {
         var hoursToSecs = hours * 3600;
@@ -43,7 +43,7 @@
     }
 }
 
-//In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+// In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
 //
 // chickens = 2 legs
 // cows = 4 legs
@@ -60,7 +60,7 @@
 
     }
 
-//Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
+// Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
 
     function equilibrium (x) {
         if (x > 0) return "positive";
@@ -69,7 +69,7 @@
             return true;
     }
 
-//What have you learned so far that will permit you to do two different checks (value and type) with a single statement?
+// What have you learned so far that will permit you to do two different checks (value and type) with a single statement?
 //
 // Implement a function that returns true if the parameters are equal, and false if they are not.
 
@@ -77,13 +77,13 @@
              return a === b;
     }
 
-//Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
 
         function dividesEvenly(a, b) {
               return a % b  === 0;
     }
 
-//Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
+// Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
 
          function divisible(num) {
              return num % 100 === 0;
@@ -95,3 +95,9 @@
             const template = `Their names were: ${a}, ${b} and ${c}.` //This is using backticks NOT single quotes.
                  return template
     }
+
+// Write a function that returns true if the given integer is even, and false if it's odd.
+        function isEven(n) {
+             return n % 2 === 0;
+    }
+
