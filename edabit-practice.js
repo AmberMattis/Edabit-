@@ -122,3 +122,5 @@
         function makePair(num1, num2){
             return [num1, num2];
     }
+
+//The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
