@@ -132,7 +132,13 @@
          }
     }
 
-
+//Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
         function comp(str1, str2) {
             return typeof (str1 === "string" && typeof str2 === "string") && str1.length === str2.length;
+    }
+
+//Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+    function getVoteCount(votes) {
+         var  { upvotes, downvotes } = votes
+             return  upvotes - downvotes
     }
