@@ -124,3 +124,15 @@
     }
 
 //The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
+        function has_bugs(buggy_code) {
+            if (buggy_code) {
+             return 'sad days'
+         } else {
+             return 'it\'s a good day'
+         }
+    }
+
+
+        function comp(str1, str2) {
+            return typeof (str1 === "string" && typeof str2 === "string") && str1.length === str2.length;
+    }
