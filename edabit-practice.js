@@ -142,3 +142,16 @@
          var  { upvotes, downvotes } = votes
              return  upvotes - downvotes
     }
+
+//In the Code tab you will find code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section below.
+//
+// Write five adder functions:
+    var add2 = (x) => x + 2;
+
+    var add3 = (x) => x + 3;
+
+    var add5 = (x) => x + 5;
+
+    var add7 = (x) => x + 7;
+
+    var add11 = (x) => x + 11;
