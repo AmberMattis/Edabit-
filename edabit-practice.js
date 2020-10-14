@@ -123,7 +123,7 @@
             return [num1, num2];
     }
 
-//The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
+// The challenge is to try and fix this buggy code, given the inputs true and false. See the examples below for the expected output.
         function has_bugs(buggy_code) {
             if (buggy_code) {
              return 'sad days'
@@ -132,18 +132,18 @@
          }
     }
 
-//Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+// Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
         function comp(str1, str2) {
             return typeof (str1 === "string" && typeof str2 === "string") && str1.length === str2.length;
     }
 
-//Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
     function getVoteCount(votes) {
          var  { upvotes, downvotes } = votes
              return  upvotes - downvotes
     }
 
-//In the Code tab you will find code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section below.
+// In the Code tab you will find code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section below.
 //
 // Write five adder functions:
     var add2 = (x) => x + 2;
@@ -155,3 +155,8 @@
     var add7 = (x) => x + 7;
 
     var add11 = (x) => x + 11;
+
+// Create a function that takes an equation (e.g. "1+1"), and returns the answer.
+    function equation(s) {
+        return eval(s);
+}
