@@ -159,4 +159,41 @@
 // Create a function that takes an equation (e.g. "1+1"), and returns the answer.
     function equation(s) {
         return eval(s);
-}
+    }
+
+//Given two strings, firstName and lastName, return a single string in the format "last, first".
+    function concatName(firstName, lastName) {
+        return lastName.concat(', '+firstName)
+    }
+
+//Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+    function divisibleByFive(n) {
+        var divByFive = n % 5 === 0;
+        return divByFive;
+    }
+
+//Write a function that returns the length of a string. Make your function recursive.
+    function length(str) {
+        return str.length;
+    }
+
+//Create a function that evaluates an equation.
+    function eq(evaluate) {
+        var result = eval(evaluate);
+        return result;
+    }
+
+//Write a function to reverse an array.
+    function reverse(arr) {
+        return arr.reverse()
+    }
+
+//Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+    function acceptIntoMovie(age, isSupervised) {
+        return age >= 15 || isSupervised === true ? true:false;
+    }
+
+//Create a function that takes a string and returns it as an integer.
+    function stringInt(str) {
+        return parseFloat(str);
+    }
