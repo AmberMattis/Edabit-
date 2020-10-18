@@ -161,39 +161,93 @@
         return eval(s);
     }
 
-//Given two strings, firstName and lastName, return a single string in the format "last, first".
+// Given two strings, firstName and lastName, return a single string in the format "last, first".
     function concatName(firstName, lastName) {
         return lastName.concat(', '+firstName)
     }
 
-//Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
     function divisibleByFive(n) {
         var divByFive = n % 5 === 0;
         return divByFive;
     }
 
-//Write a function that returns the length of a string. Make your function recursive.
+// Write a function that returns the length of a string. Make your function recursive.
     function length(str) {
         return str.length;
     }
 
-//Create a function that evaluates an equation.
+// Create a function that evaluates an equation.
     function eq(evaluate) {
         var result = eval(evaluate);
         return result;
     }
 
-//Write a function to reverse an array.
+// Write a function to reverse an array.
     function reverse(arr) {
         return arr.reverse()
     }
 
-//Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+// Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
     function acceptIntoMovie(age, isSupervised) {
         return age >= 15 || isSupervised === true ? true:false;
     }
 
-//Create a function that takes a string and returns it as an integer.
+// Create a function that takes a string and returns it as an integer.
     function stringInt(str) {
         return parseFloat(str);
     }
+
+// Write a template string according to the following example:
+// const a = "John";
+// const b = "Joe";
+// const c = "Jack";
+// const template = "your template string" ➞ "Their names were:  John,  Joe  and  Jack."
+// modify the template variable to be a template string
+    function format(a, b, c) {
+    // the result string must give: "Their names were: a, b and c."
+        const template = "Their names were: " + a + ", " + b + " and " + c + "."
+        return template
+    }
+
+// The Math.abs() function returns the absolute value of a number. This means that it returns a number's positive value. You can think of it as the distance away from zero.
+//
+// Create a function that recreates this functionality.
+    function absolute(n) {
+        if(n < 0 ){
+            return n * - 1
+        }else{
+            return n
+        }
+    }
+
+// Write a function that uses the ternary operator to return "yeah" if b is true, and "nope" otherwise.
+    function yeah_nope(bool) {
+        return bool === true ? "yeah" : "nope";
+    }
+
+// Create a function that takes a base number and an exponent number and returns the calculation.
+    function calculateExponent(num, exp) {
+        return Math.pow(num, exp);
+    }
+// Create a function that accepts an array and returns the last item in the array.
+    function getLastItem(arr) {
+        return arr.pop()
+    }
+
+// This challenge is a bit different as the function you are given already contains some code that you should not change or remove. Also, don't do a return statement, it is already included. Your task is, given an object, prevent changes to that object.
+    function preventChanges(obj) {
+        Object.freeze(obj);
+        obj.noChanges = false;
+        obj.signature = "whatever";
+        return obj;
+    }
+
+//With ES6, you can assign variables from arrays in a much more succinct way. Create variables a and b from the given array using the ES6 destructuring assignment syntax, where a === 1 and b === 2.
+    const arr = [1, 2, 3, 4, 5, 6]
+    var [a, b] = arr;
+
+    console.log(a);
+    console.log(b);
+
+//
