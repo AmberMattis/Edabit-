@@ -260,3 +260,8 @@
     function isEvenOrOdd(num) {
         return num % 2 === 0 ? "even":"odd";
     }
+
+// Create a function that takes an array of numbers or letters and returns a string.
+    function arrayToString(arr) {
+        return arr.join("")
+    }
