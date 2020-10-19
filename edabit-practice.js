@@ -243,15 +243,20 @@
         return obj;
     }
 
-//With ES6, you can assign variables from arrays in a much more succinct way. Create variables a and b from the given array using the ES6 destructuring assignment syntax, where a === 1 and b === 2.
+// With ES6, you can assign variables from arrays in a much more succinct way. Create variables a and b from the given array using the ES6 destructuring assignment syntax, where a === 1 and b === 2.
     const arr = [1, 2, 3, 4, 5, 6]
     var [a, b] = arr;
 
     console.log(a);
     console.log(b);
 
-//A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.
+// A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.
     function shouldServeDrinks(age, onBreak) {
         var serve = age >= 18 && !onBreak;
         return serve;
 }
+
+// Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+    function isEvenOrOdd(num) {
+        return num % 2 === 0 ? "even":"odd";
+    }
