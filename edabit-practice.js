@@ -278,3 +278,12 @@
     function flipBool(b) {
         return b == true ? 0 : 1
     }
+
+//Check the principles of minimalist code in the intro to the first challenge.
+//
+// In the Code tab you will find a code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section down below.
+//
+// Write a function that returns the string "even" if the given integer is even, and the string "odd" if it's odd.
+    function parity(n) {
+        return n % 2 === 0 ? "even":"odd";
+    }
