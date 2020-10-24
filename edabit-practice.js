@@ -287,3 +287,13 @@
     function parity(n) {
         return n % 2 === 0 ? "even":"odd";
     }
+
+//Given any number of parameters (which is signified using *args syntax), return True if none of the variables are falsy/empty.
+    function nothing_is_nothing() {
+        return [...arguments].every(x => Boolean(x))
+    }
+
+//Create a function that returns how many possible outcomes can come from a certain number of switches (on / off).
+    function posCom(num) {
+        return Math.pow(2,num );
+    }
