@@ -279,7 +279,7 @@
         return b == true ? 0 : 1
     }
 
-//Check the principles of minimalist code in the intro to the first challenge.
+// Check the principles of minimalist code in the intro to the first challenge.
 //
 // In the Code tab you will find a code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section down below.
 //
@@ -288,22 +288,31 @@
         return n % 2 === 0 ? "even":"odd";
     }
 
-//Given any number of parameters (which is signified using *args syntax), return True if none of the variables are falsy/empty.
+// Given any number of parameters (which is signified using *args syntax), return True if none of the variables are falsy/empty.
     function nothing_is_nothing() {
         return [...arguments].every(x => Boolean(x))
     }
 
-//Create a function that returns how many possible outcomes can come from a certain number of switches (on / off).
+// Create a function that returns how many possible outcomes can come from a certain number of switches (on / off).
     function posCom(num) {
         return Math.pow(2,num );
     }
 
-//Create a function that will put the first argument, a character, between every word in the second argument, a string
+// Create a function that will put the first argument, a character, between every word in the second argument, a string
     function add(char, str) {
         return str.split(' ').join(char)
     }
 
-//Create a function which returns the length of a string, WITHOUT using String.length property
+// Create a function which returns the length of a string, WITHOUT using String.length property
     function length(s) {
         return s.lastIndexOf('')
+    }
+
+// Write a function that accepts base (decimal), height (decimal) and shape ("triangle", "parallelogram") as input and calculates the area of that shape.
+    function areaShape(base, height, shape) {
+        if(shape === "triangle"){
+            return (.5 * base) * height
+        }else{
+            return base * height
+        }
     }
