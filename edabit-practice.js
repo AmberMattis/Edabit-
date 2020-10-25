@@ -317,5 +317,10 @@
         }
     }
 
-//Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+// Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
     const helloName = name => "Hello " + name + "!";
+
+// Write a function that takes a number n and returns the number of stacked boxes in a model n levels high, visible and invisible.
+    function stackBoxes(n) {
+        return n * n;
+    }
