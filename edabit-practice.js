@@ -329,3 +329,9 @@
     function howManyStickers(n) {
         return Math.pow(n,2) * 6;
     }
+
+// Create a function that finds the index of a given item.
+    function search(arr, item) {
+        return arr.indexOf(item)
+    }
+
