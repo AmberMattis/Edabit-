@@ -413,3 +413,10 @@
             return n2
         }
     }
+
+
+// Create a function that returns a number, based on the string provided. Here is a list of all digits (if you are non english speaker):
+    function word(s) {
+        var number = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+        return number.indexOf(s)
+    }
