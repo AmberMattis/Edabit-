@@ -457,3 +457,8 @@
             arr[i] = arr[i] + 1
         return arr
     }
+
+//Create a function that will handle simple math expressions. The input is an expression in the form of a string.
+    function calculator(str) {
+        return eval(str)
+    }
