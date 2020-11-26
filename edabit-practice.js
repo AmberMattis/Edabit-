@@ -423,14 +423,14 @@
 
 
 //Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
-    function sumArray(arr) {
-        sum = 0;
-        for(var i = 0; i < arr.length; i++) {
-            sum+=arr[i];
-        }
-        return sum;
-    }
-
+//     function sumArray(arr) {
+//         sum = 0;
+//         for(var i = 0; i < arr.length; i++) {
+//             sum+=arr[i];
+//         }
+//         return sum;
+//     }
+//
 
 //Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
     function sumArray(arr) {
@@ -445,8 +445,15 @@
 //Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
     function sumArray(arr) {
         var sum = 0;
-        for (i=0; i<arr.length; i++) {
+        for (let i=0; i<arr.length; i++) {
             sum+=arr[i];
         }
         return sum
+    }
+
+//Help fix all the bugs in the function incrementItems! It is intended to add 1 to every element in the array!
+    function incrementItems(arr) {
+        for (let i = 0; i < arr.length; i++)
+            arr[i] = arr[i] + 1
+        return arr
     }
