@@ -462,3 +462,7 @@
     function calculator(str) {
         return eval(str);
     }
+
+    function multiply(a,b){
+        return a * b;
+    }
